@@ -86,6 +86,7 @@ extension HomePageViewController: BackHomePageDelegate
 {
     func backHomePageDelegate(viewModel: DailyScheduleModel, indexPath: Int)
     {
+        print("sdf")
         HomePageViewModel.shared.setSchedule(type: .done, value: viewModel)
         HomePageViewModel.shared.removeUndoneScheduleData(indexPath: indexPath)
     }

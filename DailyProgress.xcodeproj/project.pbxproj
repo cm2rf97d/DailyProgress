@@ -12,6 +12,7 @@
 		273110D326AFCAB800289ACE /* CompleteScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273110D226AFCAB800289ACE /* CompleteScheduleViewController.swift */; };
 		273110D526AFD32500289ACE /* CompleteScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273110D426AFD32500289ACE /* CompleteScheduleViewModel.swift */; };
 		273110DD26B4F04000289ACE /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273110DC26B4F04000289ACE /* HomePageView.swift */; };
+		273110E126B7793700289ACE /* CompleteScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273110E026B7793700289ACE /* CompleteScheduleView.swift */; };
 		277C28C626A6A97D00E668A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277C28C526A6A97D00E668A7 /* AppDelegate.swift */; };
 		277C28C826A6A97D00E668A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277C28C726A6A97D00E668A7 /* SceneDelegate.swift */; };
 		277C28CA26A6A97D00E668A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277C28C926A6A97D00E668A7 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 		273110D226AFCAB800289ACE /* CompleteScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteScheduleViewController.swift; sourceTree = "<group>"; };
 		273110D426AFD32500289ACE /* CompleteScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteScheduleViewModel.swift; sourceTree = "<group>"; };
 		273110DC26B4F04000289ACE /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		273110E026B7793700289ACE /* CompleteScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteScheduleView.swift; sourceTree = "<group>"; };
 		277C28C226A6A97D00E668A7 /* DailyProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277C28C526A6A97D00E668A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		277C28C726A6A97D00E668A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		273110DF26B777D000289ACE /* ScheduleDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				273110E026B7793700289ACE /* CompleteScheduleView.swift */,
 				273110D226AFCAB800289ACE /* CompleteScheduleViewController.swift */,
 				273110D426AFD32500289ACE /* CompleteScheduleViewModel.swift */,
 			);
@@ -231,6 +234,7 @@
 				277C28FE26A9655800E668A7 /* AddDailyScheDuleViewModel.swift in Sources */,
 				277C28FC26A83D4A00E668A7 /* KeyBoardExtension.swift in Sources */,
 				277C28DE26A6B90300E668A7 /* HomePageViewController.swift in Sources */,
+				273110E126B7793700289ACE /* CompleteScheduleView.swift in Sources */,
 				277C28F326A6D32800E668A7 /* HomeCollectionViewCell.swift in Sources */,
 				277C28E326A6BAB700E668A7 /* TabBarViewController.swift in Sources */,
 				273110D526AFD32500289ACE /* CompleteScheduleViewModel.swift in Sources */,

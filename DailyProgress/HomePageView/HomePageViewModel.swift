@@ -84,8 +84,9 @@ class HomePageViewModel
                     undoneDailySchedule[value.taskDate] = [value]
                 }
             case .done:
-                if let tempData = doneDailySchedule[value.taskDate]
+                if var tempData = doneDailySchedule[value.taskDate]
                 {
+                    tempData.append(value)
                     doneDailySchedule.updateValue(tempData, forKey: value.taskDate)
                 }
                 else
