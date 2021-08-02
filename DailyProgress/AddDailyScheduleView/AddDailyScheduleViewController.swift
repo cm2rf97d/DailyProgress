@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol addDailyScheduleDelegate
+protocol addDailyScheduleDelegate: AnyObject
 {
     func addDailySchedule(data: DailyScheduleModel)
 }
@@ -15,7 +15,7 @@ protocol addDailyScheduleDelegate
 class AddDailyScheduleViewController: UIViewController
 {
     let viewModel = AddDailyScheduleViewModel()
-    var addDailyScheduleDelegate: addDailyScheduleDelegate?
+    weak var addDailyScheduleDelegate: addDailyScheduleDelegate?
     
     let taskItemLabel: UILabel =
     {

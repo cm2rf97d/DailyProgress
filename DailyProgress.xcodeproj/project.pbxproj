@@ -22,7 +22,6 @@
 		277C28E626A6BC3A00E668A7 /* DefaultColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277C28E526A6BC3A00E668A7 /* DefaultColor.swift */; };
 		277C28E926A6C05B00E668A7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 277C28E826A6C05B00E668A7 /* SnapKit */; };
 		277C28EC26A6C21800E668A7 /* AddDailyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277C28EB26A6C21800E668A7 /* AddDailyScheduleViewController.swift */; };
-		277C28F026A6C3FE00E668A7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277C28EF26A6C3FE00E668A7 /* ProfileViewController.swift */; };
 		277C28F326A6D32800E668A7 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277C28F226A6D32800E668A7 /* HomeCollectionViewCell.swift */; };
 		277C28F626A6DE2600E668A7 /* DailyScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277C28F526A6DE2600E668A7 /* DailyScheduleModel.swift */; };
 		277C28FA26A7BFE000E668A7 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277C28F926A7BFE000E668A7 /* HomePageViewModel.swift */; };
@@ -47,7 +46,6 @@
 		277C28E226A6BAB700E668A7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		277C28E526A6BC3A00E668A7 /* DefaultColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultColor.swift; sourceTree = "<group>"; };
 		277C28EB26A6C21800E668A7 /* AddDailyScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDailyScheduleViewController.swift; sourceTree = "<group>"; };
-		277C28EF26A6C3FE00E668A7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		277C28F226A6D32800E668A7 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		277C28F526A6DE2600E668A7 /* DailyScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScheduleModel.swift; sourceTree = "<group>"; };
 		277C28F926A7BFE000E668A7 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
@@ -67,14 +65,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		273110D126AFCA3400289ACE /* DetailVCs */ = {
-			isa = PBXGroup;
-			children = (
-				273110D226AFCAB800289ACE /* CompleteScheduleViewController.swift */,
-			);
-			path = DetailVCs;
-			sourceTree = "<group>";
-		};
 		273110D926B4EFF000289ACE /* HomePageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +75,24 @@
 				277C28F526A6DE2600E668A7 /* DailyScheduleModel.swift */,
 			);
 			path = HomePageView;
+			sourceTree = "<group>";
+		};
+		273110DE26B777A700289ACE /* AddDailyScheduleView */ = {
+			isa = PBXGroup;
+			children = (
+				277C28EB26A6C21800E668A7 /* AddDailyScheduleViewController.swift */,
+				277C28FD26A9655800E668A7 /* AddDailyScheDuleViewModel.swift */,
+			);
+			path = AddDailyScheduleView;
+			sourceTree = "<group>";
+		};
+		273110DF26B777D000289ACE /* ScheduleDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				273110D226AFCAB800289ACE /* CompleteScheduleViewController.swift */,
+				273110D426AFD32500289ACE /* CompleteScheduleViewModel.swift */,
+			);
+			path = ScheduleDetailView;
 			sourceTree = "<group>";
 		};
 		277C28B926A6A97D00E668A7 = {
@@ -109,35 +117,16 @@
 				277C28C526A6A97D00E668A7 /* AppDelegate.swift */,
 				277C28C726A6A97D00E668A7 /* SceneDelegate.swift */,
 				277C28C926A6A97D00E668A7 /* ViewController.swift */,
+				273110DF26B777D000289ACE /* ScheduleDetailView */,
 				273110D926B4EFF000289ACE /* HomePageView */,
+				273110DE26B777A700289ACE /* AddDailyScheduleView */,
 				277C28F126A6CEDB00E668A7 /* Cell */,
 				277C28E426A6BC2100E668A7 /* Extensions */,
-				277C28DC26A6B8ED00E668A7 /* ViewControllers */,
-				277C28D926A6B28700E668A7 /* ViewModels */,
 				277C28CE26A6A97F00E668A7 /* Assets.xcassets */,
 				277C28D026A6A97F00E668A7 /* LaunchScreen.storyboard */,
 				277C28D326A6A97F00E668A7 /* Info.plist */,
 			);
 			path = DailyProgress;
-			sourceTree = "<group>";
-		};
-		277C28D926A6B28700E668A7 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				277C28FD26A9655800E668A7 /* AddDailyScheDuleViewModel.swift */,
-				273110D426AFD32500289ACE /* CompleteScheduleViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		277C28DC26A6B8ED00E668A7 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				273110D126AFCA3400289ACE /* DetailVCs */,
-				277C28EE26A6C3E600E668A7 /* ProfileVCs */,
-				277C28EA26A6C1E500E668A7 /* AddDailyProgressVCs */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		277C28E426A6BC2100E668A7 /* Extensions */ = {
@@ -148,22 +137,6 @@
 				273110CF26AFAE4700289ACE /* DateConversion.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		277C28EA26A6C1E500E668A7 /* AddDailyProgressVCs */ = {
-			isa = PBXGroup;
-			children = (
-				277C28EB26A6C21800E668A7 /* AddDailyScheduleViewController.swift */,
-			);
-			path = AddDailyProgressVCs;
-			sourceTree = "<group>";
-		};
-		277C28EE26A6C3E600E668A7 /* ProfileVCs */ = {
-			isa = PBXGroup;
-			children = (
-				277C28EF26A6C3FE00E668A7 /* ProfileViewController.swift */,
-			);
-			path = ProfileVCs;
 			sourceTree = "<group>";
 		};
 		277C28F126A6CEDB00E668A7 /* Cell */ = {
@@ -261,7 +234,6 @@
 				277C28F326A6D32800E668A7 /* HomeCollectionViewCell.swift in Sources */,
 				277C28E326A6BAB700E668A7 /* TabBarViewController.swift in Sources */,
 				273110D526AFD32500289ACE /* CompleteScheduleViewModel.swift in Sources */,
-				277C28F026A6C3FE00E668A7 /* ProfileViewController.swift in Sources */,
 				277C28C826A6A97D00E668A7 /* SceneDelegate.swift in Sources */,
 				277C28EC26A6C21800E668A7 /* AddDailyScheduleViewController.swift in Sources */,
 				277C28FA26A7BFE000E668A7 /* HomePageViewModel.swift in Sources */,
